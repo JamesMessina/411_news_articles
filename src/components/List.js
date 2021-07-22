@@ -11,7 +11,12 @@ class List extends Component {
         return (
             <div>
                 {this.props.articles.map(a => {
-                    return <p>{a.title}</p>
+                    return (
+                        <div>
+                            <p>{a.band_name}</p>
+                            <p>{a.origin}</p>
+                        </div>
+                    )
                 })}
             </div>
         )

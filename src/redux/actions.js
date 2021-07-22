@@ -1,15 +1,15 @@
-const url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=306a3a071f224f729829308fa9f5896a'
-
+const url = 'http://127.0.0.1:3306/bands'
 
 export const fetchArticles = () => {
     return(dispatch) => {
         fetch(url)
             .then(res => res.json())
-            .then(response =>{
+            .then(data =>{
                 const articleAction = {
                     type: 'FETCH_ARTICLES',
-                    value: response.articles
+                    value: data
                 }
+                console.log(data)
                 dispatch(articleAction)
             })
     }
