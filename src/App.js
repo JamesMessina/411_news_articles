@@ -8,7 +8,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <h1>News Articles</h1>
+        <h1 style={{color:'red', textDecoration: 'underline'}}>Bands</h1>
         <List />
       </div>
     </Provider>
