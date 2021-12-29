@@ -11,12 +11,13 @@ class List extends Component {
     render() {
         return (
             <div>
-                {this.props.bands.map((a, idx) => {
+                {this.props.bands.map((b, idx) => {
                     return (
                         <div key={idx}>
-                            <h1>{a.band_name}</h1>
-                            <p>{a.currentMembers}</p>
-                            <h6>{a.yearsActive}</h6>
+                            <h1>{b.band_name}</h1>
+                            <p>{b.currentMembers}</p>
+                            <h6>{b.yearsActive}</h6>
+                            <hr></hr>
                         </div>
                     )
                 })}
