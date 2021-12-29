@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux'
 
-const articles = (state = [], action) => {
+const bands = (state = [], action) => {
     switch(action.type) {
-        case 'FETCH_ARTICLES' :
+        case 'FETCH_BANDS' :
             return action.value 
         default:
             return state
     }
 }
 
-export default combineReducers({ articles })
+export default combineReducers({ bands })

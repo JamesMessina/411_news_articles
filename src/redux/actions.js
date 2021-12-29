@@ -1,12 +1,12 @@
-const url = 'http://127.0.0.1:3306/bands'
+const url = 'https://musicapp17.herokuapp.com/bands'
 
-export const fetchArticles = () => {
+export const fetchBands = () => {
     return(dispatch) => {
         fetch(url)
             .then(res => res.json())
             .then(data =>{
                 const articleAction = {
-                    type: 'FETCH_ARTICLES',
+                    type: 'FETCH_BANDS',
                     value: data
                 }
                 console.log(data)

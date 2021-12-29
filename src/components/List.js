@@ -5,13 +5,13 @@ class List extends Component {
 
     
     componentDidMount(){
-        this.props.fetchArticles()
+        this.props.fetchBands()
     }
 
     render() {
         return (
             <div>
-                {this.props.articles.map((a, idx) => {
+                {this.props.bands.map((a, idx) => {
                     return (
                         <div key={idx}>
                             <h1>{a.band_name}</h1>

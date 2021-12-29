@@ -1,16 +1,16 @@
 import { connect } from 'react-redux'
 import List from '../components/List'
-import { fetchArticles } from '../redux/actions'
+import { fetchBands } from '../redux/actions'
 
 const mapStateToProps = (state) => {
     return {
-        articles: state.articles
+        bands: state.bands
     }
 }
 
 const mapDispatchToProps = (dispatch) =>{
     return {
-        fetchArticles : () => dispatch(fetchArticles())
+        fetchBands : () => dispatch(fetchBands())
     }
 }
 
