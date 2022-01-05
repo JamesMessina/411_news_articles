@@ -1,8 +1,8 @@
-const url = 'https://musicapp17.herokuapp.com/bands'
+const localURL = 'http://localhost:3306/bands'; 
 
 export const fetchBands = () => {
     return(dispatch) => {
-        fetch(url)
+        fetch(localURL)
             .then(res => res.json())
             .then(data =>{
                 const articleAction = {
