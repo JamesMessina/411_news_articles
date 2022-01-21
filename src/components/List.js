@@ -59,7 +59,7 @@ function List(props) {
         }
         console.log(settings)
         try {
-            await fetch('http://127.0.0.1:3306/bands', settings)
+            await fetch('https://musicapp17.herokuapp.com/bands', settings)
         }catch(e){
             console.error("problem posting new band", e)
         }
